@@ -14,3 +14,4 @@ slurm*
 !Genes_n_sims/
 !Simulations/*
 !docs/Tutorials/Simulating_phenotypes.ipynb
+Simulate/Results/Sim_params/Covariates_non_random_sites_0.25.json

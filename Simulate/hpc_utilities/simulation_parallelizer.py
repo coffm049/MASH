@@ -21,7 +21,7 @@ import json
 #args= read_flags({"argfile" : "Simulations/Sim_params/Adding_sites_clusts.json"})
 args = get_args()
 logging.info("Simulating with the following parameters:")
-logging(args)
+logging.info(args)
 
 
 sigmas = []
@@ -120,7 +120,7 @@ def write_sim_json(nsubjectss = args["nsubjectss"],
                 "ortho_cov" : True,
                 "random_BS" : args["random_BS"]
                 } 
-        with open(f'Temp/{nsubjects}{sigma[0]}{sigma[1]}{sigma[2]}{site_comp}{nsite}{theta_alleles}{nclusts}{dominance}{prop_causal}{site_dep}{nSNPs}{phens}{races_differ}{cov_effect}{ortho_cov}{random_BS}{__}.json', 'w') as fp:
+        with open(f'Simulate/Results/Sim_params/Temp/{nsubjects}{sigma[0]}{sigma[1]}{sigma[2]}{site_comp}{nsite}{theta_alleles}{nclusts}{dominance}{prop_causal}{site_dep}{nSNPs}{phens}{races_differ}{cov_effect}{ortho_cov}{random_BS}{__}.json', 'w') as fp:
             json.dump(data, fp, indent = 4)
 
         
